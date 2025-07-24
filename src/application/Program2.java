@@ -14,6 +14,11 @@ public class Program2 {
 
         System.out.println(department);
 
+        System.out.println("===Test Insert===");
+        Department newDepartment = new Department(null, "TestDepartment");
+        departmentDao.insert(newDepartment);
+        System.out.println("Insert completed! ID: " + newDepartment.getId());
+        
 
     }
 }
